@@ -1,0 +1,21 @@
+{% extends "Clients/base.html" %}  
+{% load static %}
+
+{% block content %}
+<main style="padding: 20px; max-width: 1200px; margin: auto;">
+    <h1 style="text-align: center; margin-bottom: 30px; color: #e74c3c;">Nos Restaurants</h1>
+    <div style="display: grid; grid-template-columns: repeat(auto-fill,minmax(300px,1fr)); gap: 25px;">
+        {% for r in restaurants %}
+        <article style="border: 1px solid #ddd; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+            <div style="height: 180px; background-image: url('{{ r.image }}'); background-size: cover; background-position: center;"></div>
+            <div style="padding: 15px;">
+                <h2 style="color: #e74c3c;">{{ r.name }}</h2>
+                <p>{{ r.description }}</p>
+                <p><strong>Adresse :</strong> {{ r.address }}</p>
+                <p><strong>Téléphone :</strong> {{ r.phone }}</p>
+            </div>
+        </article>
+        {% endfor %}
+    </div>
+</main>
+{% endblock %}

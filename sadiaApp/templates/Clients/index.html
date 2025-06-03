@@ -1,0 +1,870 @@
+{% extends "Clients/base.html" %}
+{% load static %}
+
+{% block body %}   
+  
+  
+  <main class="main">
+
+<!-- Section Accueil (Hero) -->
+<section id="hero" class="hero section dark-background">
+
+  <div id="hero-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+
+    <div class="carousel-item active">
+      <img src="{% static 'Clients/assets/img/hero-carousel/hero-carousel-1.jpg' %}" alt="Sadia Restaurant au Togo">
+      <div class="carousel-container">
+        <h2><span>Sadia</span> Restaurant</h2>
+        <p>Bienvenue chez Sadia Restaurant, l’adresse incontournable au Togo pour déguster des plats savoureux, authentiques et préparés avec passion.</p>
+        <div>
+          <a href="#menu" class="btn-get-started">Voir le Menu</a>
+          <a href="#reservations" class="btn-get-started">Réserver une table</a>
+        </div>
+      </div>
+    </div><!-- Fin du slide actif -->
+
+    <div class="carousel-item">
+      <img src="{% static 'Clients/assets/img/hero-carousel/hero-carousel-2.jpg' %}" alt="Saveurs togolaises chez Sadia">
+      <div class="carousel-container">
+        <h2>Des saveurs togolaises uniques</h2>
+        <p>Découvrez la richesse de la cuisine togolaise revisitée avec créativité pour un voyage gustatif inoubliable.</p>
+        <div>
+          <a href="#menu" class="btn-get-started">Voir le Menu</a>
+          <a href="#reservations" class="btn-get-started">Réserver une table</a>
+        </div>
+      </div>
+    </div><!-- Fin du slide 2 -->
+
+    <div class="carousel-item">
+      <img src="{% static 'Clients/assets/img/hero-carousel/hero-carousel-3.jpg' %}" alt="Service de qualité chez Sadia Restaurant">
+      <div class="carousel-container">
+        <h2>Un service chaleureux et attentionné</h2>
+        <p>Notre équipe togolaise vous accueille avec le sourire pour vous offrir un moment convivial et mémorable.</p>
+        <div>
+          <a href="#menu" class="btn-get-started">Voir le Menu</a>
+          <a href="#reservations" class="btn-get-started">Réserver une table</a>
+        </div>
+      </div>
+    </div><!-- Fin du slide 3 -->
+
+    <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+    </a>
+
+    <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
+      <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+    </a>
+
+    <ol class="carousel-indicators"></ol>
+
+  </div>
+
+</section><!-- /Section Accueil (Hero) -->
+
+
+<!-- Section À propos -->
+<section id="about" class="about section light-background">
+
+  <div class="container">
+
+    <div class="row gy-4">
+      <div class="col-lg-6 position-relative align-self-start" data-aos="fade-up" data-aos-delay="100">
+        <img src="{% static 'Clients/assets/img/about.jpg' %}" class="img-fluid" alt="Sadia Restaurant - À propos">
+        <a href="https://www.youtube.com/watch?v=jH3WWoDBwMg&pp=ygUVZm9vZCBub3VyaXR1cmUgIHNwb3Qg" class="glightbox pulsating-play-btn" title="Découvrez Sadia Restaurant"></a>
+      </div>
+      <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="200">
+        <h3>Bienvenue chez Sadia Restaurant, l'authenticité togolaise au rendez-vous</h3>
+        <p class="fst-italic">
+          Situé au cœur du Togo, Sadia Restaurant vous invite à découvrir des plats traditionnels préparés avec soin, alliant saveurs locales et touches modernes.
+        </p>
+        <ul>
+          <li><i class="bi bi-check2-all"></i> <span>Des ingrédients frais et locaux sélectionnés avec rigueur.</span></li>
+          <li><i class="bi bi-check2-all"></i> <span>Une équipe passionnée dédiée à votre satisfaction.</span></li>
+          <li><i class="bi bi-check2-all"></i> <span>Un cadre convivial et chaleureux pour vos repas en famille ou entre amis.</span></li>
+        </ul>
+        <p>
+          Notre mission est de vous offrir une expérience culinaire unique qui célèbre la richesse de la gastronomie togolaise tout en garantissant un service de qualité et un accueil authentique.
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+</section><!-- /Section À propos -->
+
+
+<!-- Section Pourquoi Nous Choisir -->
+<section id="why-us" class="why-us section">
+
+  <!-- Titre de la Section -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Pourquoi Nous Choisir</h2>
+    <div><span>Découvrez</span> <span class="description-title">Sadia Restaurant</span></div>
+  </div><!-- Fin Titre -->
+
+  <div class="container">
+
+    <div class="row gy-4">
+
+      <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="card-item">
+          <span>01</span>
+          <h4><a href="#" class="stretched-link">Produits Locaux de Qualité</a></h4>
+          <p>Nous utilisons uniquement des ingrédients frais et soigneusement sélectionnés auprès de producteurs locaux pour garantir authenticité et saveurs uniques.</p>
+        </div>
+      </div><!-- Item Carte -->
+
+      <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="card-item">
+          <span>02</span>
+          <h4><a href="#" class="stretched-link">Service Chaleureux et Professionnel</a></h4>
+          <p>Notre équipe passionnée est dédiée à vous offrir une expérience conviviale et un accueil personnalisé à chaque visite.</p>
+        </div>
+      </div><!-- Item Carte -->
+
+      <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+        <div class="card-item">
+          <span>03</span>
+          <h4><a href="#" class="stretched-link">Cadre Confortable et Ambiance Agréable</a></h4>
+          <p>Profitez d’un espace soigné et accueillant, idéal pour vos repas en famille, entre amis ou pour vos événements spéciaux.</p>
+        </div>
+      </div><!-- Item Carte -->
+
+    </div>
+
+  </div>
+
+</section><!-- /Section Pourquoi Nous Choisir -->
+
+
+<!-- Section Menu -->
+<section id="menu" class="menu section">
+
+  <!-- Titre de la Section -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Menu</h2>
+    <div><span>Découvrez</span> <span class="description-title">Nos Délices</span></div>
+  </div><!-- Fin Titre -->
+
+  <div class="container isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+    <div class="row" data-aos="fade-up" data-aos-delay="100">
+      <div class="col-lg-12 d-flex justify-content-center">
+        <ul class="menu-filters isotope-filters">
+          <li data-filter="*" class="filter-active">Tous</li>
+          <li data-filter=".filter-entrées">Entrées</li>
+          <li data-filter=".filter-plats">Plats Principaux</li>
+          <li data-filter=".filter-desserts">Desserts</li>
+        </ul>
+      </div>
+    </div><!-- Filtres Menu -->
+
+    <div class="row isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+      <div class="col-lg-6 menu-item isotope-item filter-entrées">
+        <img src="{% static 'Clients/assetsimg/menu/akassa.jpg' %}" class="menu-img" alt="Akassa">
+        <div class="menu-content">
+          <a href="#">Akassa</a><span>1500 Fcfa</span>
+        </div>
+        <div class="menu-ingredients">
+          Pâte de maïs fermentée, servie avec une sauce pimentée et poisson fumé.
+        </div>
+      </div><!-- Menu Item -->
+
+      <div class="col-lg-6 menu-item isotope-item filter-plats">
+        <img src="{% static 'Clients/assetsimg/menu/fufu-igname.jpg' %}" class="menu-img" alt="Fufu d’Igname">
+        <div class="menu-content">
+          <a href="#">Fufu d’Igname</a><span>2500 Fcfa</span>
+        </div>
+        <div class="menu-ingredients">
+          Purée d’igname accompagnée de sauce graine ou sauce arachide selon votre choix.
+        </div>
+      </div><!-- Menu Item -->
+
+      <div class="col-lg-6 menu-item isotope-item filter-desserts">
+        <img src="{% static 'Clients/assetsimg/menu/banana-frit.jpg' %}" class="menu-img" alt="Bananes Frites">
+        <div class="menu-content">
+          <a href="#">Bananes Frites</a><span>1000 Fcfa</span>
+        </div>
+        <div class="menu-ingredients">
+          Bananes plantains mûres frites, servies avec une sauce sucrée maison.
+        </div>
+      </div><!-- Menu Item -->
+
+      <div class="col-lg-6 menu-item isotope-item filter-plats">
+        <img src="{% static 'Clients/assetsimg/menu/poulet-yassa.jpg' %}" class="menu-img" alt="Poulet Yassa">
+        <div class="menu-content">
+          <a href="#">Poulet Yassa</a><span>3000 Fcfa</span>
+        </div>
+        <div class="menu-ingredients">
+          Poulet mariné aux oignons et citron, accompagné de riz blanc.
+        </div>
+      </div><!-- Menu Item -->
+
+      <div class="col-lg-6 menu-item isotope-item filter-entrées">
+        <img src="{% static 'Clients/assetsimg/menu/soupe-igname.jpg' %}" class="menu-img" alt="Soupe d’Igname">
+        <div class="menu-content">
+          <a href="#">Soupe d’Igname</a><span>1200 Fcfa</span>
+        </div>
+        <div class="menu-ingredients">
+          Soupe traditionnelle préparée avec de l’igname et des épices locales.
+        </div>
+      </div><!-- Menu Item -->
+
+      <div class="col-lg-6 menu-item isotope-item filter-desserts">
+        <img src="{% static 'Clients/assetsimg/menu/akassa-caramel.jpg' %}" class="menu-img" alt="Akassa au Caramel">
+        <div class="menu-content">
+          <a href="#">Akassa au Caramel</a><span>1100 Fcfa</span>
+        </div>
+        <div class="menu-ingredients">
+          Variante sucrée d’akassa nappée d’une sauce caramel maison.
+        </div>
+      </div><!-- Menu Item -->
+
+    </div><!-- Conteneur Menu -->
+
+  </div>
+
+</section><!-- /Section Menu -->
+
+
+<!-- Specials Section -->
+<section id="specials" class="specials section">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Specials</h2>
+    <div><span>Check Our</span> <span class="description-title">Specials</span></div>
+  </div><!-- End Section Title -->
+
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+    <div class="row">
+      <!-- Colonne des onglets -->
+      <div class="col-lg-3">
+        <ul class="nav nav-tabs flex-column">
+          <li class="nav-item">
+            <a class="nav-link active show" data-bs-toggle="tab" href="#specials-tab-1">Modi sit est</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" href="#specials-tab-2">Unde praesentium sed</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" href="#specials-tab-3">Pariatur explicabo vel</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" href="#specials-tab-4">Nostrum qui quasi</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" href="#specials-tab-5">Iusto ut expedita aut</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Colonne du contenu des onglets -->
+      <div class="col-lg-9 mt-4 mt-lg-0">
+        <div class="tab-content">
+
+          <!-- Premier onglet actif -->
+          <div class="tab-pane active show" id="specials-tab-1">
+            <div class="row">
+              <div class="col-lg-8 details order-2 order-lg-1">
+                <h3>Architecto ut aperiam autem id</h3>
+                <p class="fst-italic">Description courte en italique.</p>
+                <p>Description détaillée de la spécialité.</p>
+              </div>
+              <div class="col-lg-4 text-center order-1 order-lg-2">
+                <img src="{% static  'Clients/assetsimg/specials-1.jpg' %}" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div>
+
+          <!-- Autres onglets -->
+          <div class="tab-pane" id="specials-tab-2">
+            <!-- contenu similaire avec texte et image -->
+          </div>
+          <div class="tab-pane" id="specials-tab-3">
+            <!-- contenu similaire -->
+          </div>
+          <div class="tab-pane" id="specials-tab-4">
+            <!-- contenu similaire -->
+          </div>
+          <div class="tab-pane" id="specials-tab-5">
+            <!-- contenu similaire -->
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</section><!-- /Specials Section -->
+
+
+<!-- Section Événements -->
+<section id="events" class="events section">
+
+  <!-- Image de fond pour le slider, avec effet fade-in -->
+  <img class="slider-bg" src="{% static 'Clients/assetsimg/events-bg.jpg' %}" alt="" data-aos="fade-in">
+
+  <div class="container">
+
+    <!-- Initialisation du slider Swiper avec animation fade-up et délai -->
+    <div class="swiper init-swiper" data-aos="fade-up" data-aos-delay="100">
+
+      <!-- Configuration du slider via JSON -->
+      <script type="application/json" class="swiper-config">
+        {
+          "loop": true,                 /* Le slider tourne en boucle */
+          "speed": 600,                 /* Vitesse de transition entre les slides */
+          "autoplay": {
+            "delay": 5000              /* Changement automatique toutes les 5 secondes */
+          },
+          "slidesPerView": "auto",     /* Nombre de slides visibles automatiquement adapté */
+          "pagination": {
+            "el": ".swiper-pagination", /* Élément de pagination */
+            "type": "bullets",          /* Pagination sous forme de petits points (bullets) */
+            "clickable": true           /* Pagination cliquable */
+          }
+        }
+      </script>
+
+      <!-- Conteneur des slides -->
+      <div class="swiper-wrapper">
+
+        <!-- Premier slide -->
+        <div class="swiper-slide">
+          <div class="row gy-4 event-item">
+            <div class="col-lg-6">
+              <img src="{% static 'Clients/assetsimg/events-slider/events-slider-1.jpg' %}" class="img-fluid" alt="">
+            </div>
+            <div class="col-lg-6 pt-4 pt-lg-0 content">
+              <h3>Birthday Parties</h3>
+              <div class="price">
+                <p><span>$189</span></p>
+              </div>
+              <p class="fst-italic">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                magna aliqua.
+              </p>
+              <ul>
+                <li><i class="bi bi-check2-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>
+                <li><i class="bi bi-check2-circle"></i> <span>Duis aute irure dolor in reprehenderit in voluptate velit.</span></li>
+                <li><i class="bi bi-check2-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>
+              </ul>
+              <p>
+                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                velit esse cillum dolore eu fugiat nulla pariatur
+              </p>
+            </div>
+          </div>
+        </div><!-- Fin premier slide -->
+
+        <!-- Deuxième slide -->
+        <div class="swiper-slide">
+          <div class="row gy-4 event-item">
+            <div class="col-lg-6">
+              <img src="{% static 'Clients/assetsimg/events-slider/events-slider-2.jpg' %}" class="img-fluid" alt="">
+            </div>
+            <div class="col-lg-6 pt-4 pt-lg-0 content">
+              <h3>Private Parties</h3>
+              <div class="price">
+                <p><span>$290</span></p>
+              </div>
+              <p class="fst-italic">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                magna aliqua.
+              </p>
+              <ul>
+                <li><i class="bi bi-check2-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>
+                <li><i class="bi bi-check2-circle"></i> <span>Duis aute irure dolor in reprehenderit in voluptate velit.</span></li>
+                <li><i class="bi bi-check2-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>
+              </ul>
+              <p>
+                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                velit esse cillum dolore eu fugiat nulla pariatur
+              </p>
+            </div>
+          </div>
+        </div><!-- Fin deuxième slide -->
+
+        <!-- Troisième slide -->
+        <div class="swiper-slide">
+          <div class="row gy-4 event-item">
+            <div class="col-lg-6">
+              <img src="{% static 'Clients/assetsimg/events-slider/events-slider-3.jpg' %}" class="img-fluid" alt="">
+            </div>
+            <div class="col-lg-6 pt-4 pt-lg-0 content">
+              <h3>Custom Parties</h3>
+              <div class="price">
+                <p><span>$99</span></p>
+              </div>
+              <p class="fst-italic">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                magna aliqua.
+              </p>
+              <ul>
+                <li><i class="bi bi-check2-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>
+                <li><i class="bi bi-check2-circle"></i> <span>Duis aute irure dolor in reprehenderit in voluptate velit.</span></li>
+                <li><i class="bi bi-check2-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>
+              </ul>
+              <p>
+                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                velit esse cillum dolore eu fugiat nulla pariatur
+              </p>
+            </div>
+          </div>
+        </div><!-- Fin troisième slide -->
+
+      </div>
+
+      <!-- Pagination du slider -->
+      <div class="swiper-pagination"></div>
+    </div>
+
+  </div>
+
+</section><!-- Fin Section Événements -->
+
+
+<!-- Book A Table Section -->
+<section id="book-a-table" class="book-a-table section">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Book A Table</h2>
+    <div><span>Book a</span> <span class="description-title">Table</span></div>
+  </div><!-- End Section Title -->
+
+  <div class="container">
+
+    <div class="row g-0" data-aos="fade-up" data-aos-delay="100">
+
+      <!-- Image reservation -->
+      <div class="col-lg-4 reservation-img" 
+           style="background-image: url('{% static "Clients/assets/img/reservation.jpg" %}');">
+      </div>
+
+      <!-- Formulaire réservation -->
+      <div class="col-lg-8 d-flex align-items-center reservation-form-bg" data-aos="fade-up" data-aos-delay="200">
+        <form action="forms/book-a-table.php" method="post" role="form" class="php-email-form w-100">
+
+          <div class="row gy-4">
+
+            <div class="col-lg-4 col-md-6">
+              <label for="name" class="form-label">Your Name</label>
+              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+              <label for="email" class="form-label">Your Email</label>
+              <input type="email" name="email" class="form-control" id="email" placeholder="Your Email" required>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+              <label for="phone" class="form-label">Your Phone</label>
+              <input type="tel" name="phone" class="form-control" id="phone" placeholder="Your Phone" required pattern="[0-9+\-\s]{7,15}">
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+              <label for="date" class="form-label">Date</label>
+              <input type="date" name="date" class="form-control" id="date" required>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+              <label for="time" class="form-label">Time</label>
+              <input type="time" name="time" class="form-control" id="time" required>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+              <label for="people" class="form-label"># of People</label>
+              <input type="number" name="people" class="form-control" id="people" placeholder="Number of people" min="1" max="20" required>
+            </div>
+
+          </div>
+
+          <div class="form-group mt-3">
+            <label for="message" class="form-label">Message (optional)</label>
+            <textarea class="form-control" name="message" id="message" rows="5" placeholder="Message"></textarea>
+          </div>
+
+          <div class="text-center mt-3">
+            <div class="loading" style="display:none;">Loading</div>
+            <div class="error-message" style="color:red;"></div>
+            <div class="sent-message" style="color:green; display:none;">
+              Your booking request was sent. We will call back or send an Email to confirm your reservation. Thank you!
+            </div>
+            <button type="submit">Book a Table</button>
+          </div>
+
+        </form>
+      </div><!-- End Reservation Form -->
+
+    </div>
+
+  </div>
+
+</section><!-- /Book A Table Section -->
+
+
+<!-- Gallery Section -->
+<section id="gallery" class="gallery section">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Gallery</h2>
+    <div><span>Some photos from</span> <span class="description-title">Our Restaurant</span></div>
+  </div><!-- End Section Title -->
+
+  <div class="container-fluid" data-aos="fade-up" data-aos-delay="100">
+
+    <div class="row g-0">
+
+      <div class="col-lg-3 col-md-4">
+        <div class="gallery-item">
+          <a href="{% static 'Clients/assets/img/gallery/gallery-1.jpg' %}" class="glightbox" data-gallery="images-gallery">
+            <img src="{% static 'Clients/assets/img/gallery/gallery-1.jpg' %}" alt="Restaurant view 1" class="img-fluid">
+          </a>
+        </div>
+      </div><!-- End Gallery Item -->
+
+      <div class="col-lg-3 col-md-4">
+        <div class="gallery-item">
+          <a href="{% static 'Clients/assets/img/gallery/gallery-2.jpg' %}" class="glightbox" data-gallery="images-gallery">
+            <img src="{% static 'Clients/assets/img/gallery/gallery-2.jpg' %}" alt="Restaurant view 2" class="img-fluid">
+          </a>
+        </div>
+      </div><!-- End Gallery Item -->
+
+      <div class="col-lg-3 col-md-4">
+        <div class="gallery-item">
+          <a href="{% static 'Clients/assets/img/gallery/gallery-3.jpg' %}" class="glightbox" data-gallery="images-gallery">
+            <img src="{% static 'Clients/assets/img/gallery/gallery-3.jpg' %}" alt="Restaurant view 3" class="img-fluid">
+          </a>
+        </div>
+      </div><!-- End Gallery Item -->
+
+      <div class="col-lg-3 col-md-4">
+        <div class="gallery-item">
+          <a href="{% static 'Clients/assets/img/gallery/gallery-4.jpg' %}" class="glightbox" data-gallery="images-gallery">
+            <img src="{% static 'Clients/assets/img/gallery/gallery-4.jpg' %}" alt="Restaurant view 4" class="img-fluid">
+          </a>
+        </div>
+      </div><!-- End Gallery Item -->
+
+      <div class="col-lg-3 col-md-4">
+        <div class="gallery-item">
+          <a href="{% static 'Clients/assets/img/gallery/gallery-5.jpg' %}" class="glightbox" data-gallery="images-gallery">
+            <img src="{% static 'Clients/assets/img/gallery/gallery-5.jpg' %}" alt="Restaurant view 5" class="img-fluid">
+          </a>
+        </div>
+      </div><!-- End Gallery Item -->
+
+      <div class="col-lg-3 col-md-4">
+        <div class="gallery-item">
+          <a href="{% static 'Clients/assets/img/gallery/gallery-6.jpg' %}" class="glightbox" data-gallery="images-gallery">
+            <img src="{% static 'Clients/assets/img/gallery/gallery-6.jpg' %}" alt="Restaurant view 6" class="img-fluid">
+          </a>
+        </div>
+      </div><!-- End Gallery Item -->
+
+      <div class="col-lg-3 col-md-4">
+        <div class="gallery-item">
+          <a href="{% static 'Clients/assets/img/gallery/gallery-7.jpg' %}" class="glightbox" data-gallery="images-gallery">
+            <img src="{% static 'Clients/assets/img/gallery/gallery-7.jpg' %}" alt="Restaurant view 7" class="img-fluid">
+          </a>
+        </div>
+      </div><!-- End Gallery Item -->
+
+      <div class="col-lg-3 col-md-4">
+        <div class="gallery-item">
+          <a href="{% static 'Clients/assets/img/gallery/gallery-8.jpg' %}" class="glightbox" data-gallery="images-gallery">
+            <img src="{% static 'Clients/assets/img/gallery/gallery-8.jpg' %}" alt="Restaurant view 8" class="img-fluid">
+          </a>
+        </div>
+      </div><!-- End Gallery Item -->
+
+    </div>
+
+  </div>
+
+</section><!-- /Gallery Section -->
+
+
+<!-- Chefs Section -->
+<section id="chefs" class="chefs section">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Chefs</h2>
+    <div><span>Our Professional</span> <span class="description-title">Chefs</span></div>
+  </div><!-- End Section Title -->
+
+  <div class="container">
+
+    <div class="row gy-5">
+
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="member">
+          <div class="pic">
+            <img src="{% static 'Clients/assets/img/chefs/chefs-1.jpg' %}" class="img-fluid" alt="Walter White - Master Chef">
+          </div>
+          <div class="member-info">
+            <h4>Walter White</h4>
+            <span>Master Chef</span>
+            <div class="social">
+              <a href="#"><i class="bi bi-twitter"></i></a>
+              <a href="#"><i class="bi bi-facebook"></i></a>
+              <a href="#"><i class="bi bi-instagram"></i></a>
+              <a href="#"><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+      </div><!-- End Team Member -->
+
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="member">
+          <div class="pic">
+            <img src="{% static 'Clients/assets/img/chefs/chefs-2.jpg' %}" class="img-fluid" alt="Sarah Jhonson - Patissier">
+          </div>
+          <div class="member-info">
+            <h4>Sarah Jhonson</h4>
+            <span>Patissier</span>
+            <div class="social">
+              <a href="#"><i class="bi bi-twitter"></i></a>
+              <a href="#"><i class="bi bi-facebook"></i></a>
+              <a href="#"><i class="bi bi-instagram"></i></a>
+              <a href="#"><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+      </div><!-- End Team Member -->
+
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+        <div class="member">
+          <div class="pic">
+            <img src="{% static 'Clients/assets/img/chefs/chefs-3.jpg' %}" class="img-fluid" alt="William Anderson - Cook">
+          </div>
+          <div class="member-info">
+            <h4>William Anderson</h4>
+            <span>Cook</span>
+            <div class="social">
+              <a href="#"><i class="bi bi-twitter"></i></a>
+              <a href="#"><i class="bi bi-facebook"></i></a>
+              <a href="#"><i class="bi bi-instagram"></i></a>
+              <a href="#"><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+      </div><!-- End Team Member -->
+
+    </div>
+
+  </div>
+
+</section><!-- /Chefs Section -->
+
+
+<!-- Testimonials Section -->
+<section id="testimonials" class="testimonials section dark-background">
+
+  <img src="{% static 'Clients/assets/img/testimonials-bg.jpg' %}" class="testimonials-bg" alt="Background testimonials">
+
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+    <div class="swiper init-swiper">
+      <script type="application/json" class="swiper-config">
+        {
+          "loop": true,
+          "speed": 600,
+          "autoplay": {
+            "delay": 5000
+          },
+          "slidesPerView": "auto",
+          "pagination": {
+            "el": ".swiper-pagination",
+            "type": "bullets",
+            "clickable": true
+          }
+        }
+      </script>
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide">
+          <div class="testimonial-item">
+            <img src="{% static 'Clients/assets/img/testimonials/testimonials-1.jpg' %}" class="testimonial-img" alt="Saul Goodman">
+            <h3>Saul Goodman</h3>
+            <h4>CEO &amp; Founder</h4>
+            <div class="stars">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div>
+            <p>
+              <i class="bi bi-quote quote-icon-left"></i>
+              <span>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.</span>
+              <i class="bi bi-quote quote-icon-right"></i>
+            </p>
+          </div>
+        </div><!-- End testimonial item -->
+
+        <div class="swiper-slide">
+          <div class="testimonial-item">
+            <img src="{% static 'Clients/assets/img/testimonials/testimonials-2.jpg' %}" class="testimonial-img" alt="Sara Wilsson">
+            <h3>Sara Wilsson</h3>
+            <h4>Designer</h4>
+            <div class="stars">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div>
+            <p>
+              <i class="bi bi-quote quote-icon-left"></i>
+              <span>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.</span>
+              <i class="bi bi-quote quote-icon-right"></i>
+            </p>
+          </div>
+        </div><!-- End testimonial item -->
+
+        <div class="swiper-slide">
+          <div class="testimonial-item">
+            <img src="{% static 'Clients/assets/img/testimonials/testimonials-3.jpg' %}" class="testimonial-img" alt="Jena Karlis">
+            <h3>Jena Karlis</h3>
+            <h4>Store Owner</h4>
+            <div class="stars">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div>
+            <p>
+              <i class="bi bi-quote quote-icon-left"></i>
+              <span>Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.</span>
+              <i class="bi bi-quote quote-icon-right"></i>
+            </p>
+          </div>
+        </div><!-- End testimonial item -->
+
+        <div class="swiper-slide">
+          <div class="testimonial-item">
+            <img src="{% static 'Clients/assets/img/testimonials/testimonials-4.jpg' %}" class="testimonial-img" alt="Matt Brandon">
+            <h3>Matt Brandon</h3>
+            <h4>Freelancer</h4>
+            <div class="stars">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div>
+            <p>
+              <i class="bi bi-quote quote-icon-left"></i>
+              <span>Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.</span>
+              <i class="bi bi-quote quote-icon-right"></i>
+            </p>
+          </div>
+        </div><!-- End testimonial item -->
+
+        <div class="swiper-slide">
+          <div class="testimonial-item">
+            <img src="{% static 'Clients/assets/img/testimonials/testimonials-5.jpg' %}" class="testimonial-img" alt="John Larson">
+            <h3>John Larson</h3>
+            <h4>Entrepreneur</h4>
+            <div class="stars">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div>
+            <p>
+              <i class="bi bi-quote quote-icon-left"></i>
+              <span>Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.</span>
+              <i class="bi bi-quote quote-icon-right"></i>
+            </p>
+          </div>
+        </div><!-- End testimonial item -->
+
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+  </div>
+
+</section><!-- /Testimonials Section -->
+
+
+<!-- Contact Section -->
+<section id="contact" class="contact section">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Contact</h2>
+    <div><span>Check Our</span> <span class="description-title">Contact</span></div>
+  </div><!-- End Section Title -->
+
+  <!-- Google Maps Embed -->
+  <div class="mb-5">
+
+  </div><!-- End Google Maps -->
+
+  <div class="container" data-aos="fade">
+
+    <div class="row gy-5 gx-lg-5">
+
+      <!-- Contact Info -->
+      <div class="col-lg-4">
+        <div class="info">
+          <h3>Get in touch</h3>
+          <p>Et id eius voluptates atque nihil voluptatem enim in tempore minima sit ad mollitia commodi minus.</p>
+
+          <div class="info-item d-flex">
+            <i class="bi bi-geo-alt flex-shrink-0"></i>
+            <div>
+              <h4>Location:</h4>
+              <p>A108 Adam Street, New York, NY 535022</p>
+            </div>
+          </div><!-- End Info Item -->
+
+          <div class="info-item d-flex">
+            <i class="bi bi-envelope flex-shrink-0"></i>
+            <div>
+              <h4>Email:</h4>
+              <p>info@example.com</p>
+            </div>
+          </div><!-- End Info Item -->
+
+          <div class="info-item d-flex">
+            <i class="bi bi-phone flex-shrink-0"></i>
+            <div>
+              <h4>Call:</h4>
+              <p>+1 5589 55488 55</p>
+            </div>
+          </div><!-- End Info Item -->
+        </div>
+      </div><!-- End Contact Info -->
+
+      <!-- Contact Form -->
+      <div class="col-lg-8">
+        <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+          <div class="row">
+            <div class="col-md-6 form-group">
+              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+            </div>
+            <div class="col-md-6 form-group mt-3 mt-md-0">
+              <input type="email" name="email" class="form-control" id="email" placeholder="Your Email" required>
+            </div>
+          </div>
+          <div class="form-group mt-3">
+            <input type="text" name="subject" class="form-control" id="subject" placeholder="Subject" required>
+          </div>
+          <div class="form-group mt-3">
+            <textarea name="message" class="form-control" placeholder="Message" required></textarea>
+          </div>
+          <div class="my-3">
+            <div class="loading">Loading</div>
+            <div class="error-message"></div>
+            <div class="sent-message">Your message has been sent. Thank you!</div>
+          </div>
+          <div class="text-center">
+            <button type="submit">Send Message</button>
+          </div>
+        </form>
+      </div><!-- End Contact Form -->
+
+    </div><!-- End row -->
+
+  </div><!-- End container -->
+
+</section><!-- /Contact Section -->
+
+
+  </main>
+
+{% endblock body %}
